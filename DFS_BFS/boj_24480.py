@@ -16,7 +16,7 @@ for i in range(numEdge):
     graph[end].append(start)
     
 for adjList in graph:
-    adjList.sort()
+    adjList.sort(reverse=True)
 
 def dfs(start):
     global counter
