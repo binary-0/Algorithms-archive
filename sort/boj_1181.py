@@ -10,6 +10,5 @@ lst = list(setList)
 lst.sort()
 lst.sort(key=lambda x: len(x))
 
-
 for i in range(len(lst)):
     print(lst[i])
