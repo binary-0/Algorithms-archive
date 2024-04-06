@@ -1,10 +1,10 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        history = {}
+        dictH = {}
 
         for i in range(0, len(nums)):
             required = target - nums[i]
-            if history.get(required) != None:
-                return [history[required], i]
+            if dictH.get(required) != None:
+                return [dictH[required], i]
             
-            history[nums[i]] = i
+            dictH[nums[i]] = i
