@@ -1,0 +1,2 @@
+inStr = input()
+print(inStr + "??!")
